@@ -14,3 +14,20 @@ pyright = "^1.1.329"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+pythonVersion = "3.9"
+pythonPlatform = "Linux"
+reportMissingTypeStubs = true
+root = "."
+include = ["./**/*.py", "./**/*.pyi"]
+exclude = [
+    ".venv/**",
+    "venv/**",
+    "**/node_modules",
+    "**/__pycache__",
+    "**/migrations/**",
+    "./stubs", # this is used for mypy. TODO remove
+]
+stub = "./typings"
+ignore = ["typings"]
