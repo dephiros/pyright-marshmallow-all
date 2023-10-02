@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pyright-marshmallow-all"
+version = "0.1.0"
+description = ""
+authors = ["An Nguyen <dephiros@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+marshmallow = "^3.20.1"
+pyright = "^1.1.329"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
